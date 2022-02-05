@@ -1,0 +1,11 @@
+#Rudimentary CSV Import Procedure
+
+import pandas as pd
+df = pd.read_csv('seainfo.csv')
+print(df)
+
+#Importation of a Subset of Columns
+
+To import a subset of columns, insert the usecol[] argument.
+dataframe = pd.read_csv('seainfo.csv', usecol['location','temperature'])
+print(dataframe)

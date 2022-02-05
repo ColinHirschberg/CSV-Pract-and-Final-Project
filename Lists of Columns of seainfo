@@ -12,3 +12,4 @@ dataframe = pd.read_csv('seainfo.csv', usecol['location','temperature'])
 print(dataframe)
 
 
+

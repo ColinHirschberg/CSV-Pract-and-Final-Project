@@ -1,0 +1,2 @@
+name: Run the "List of Columns of SeaInfo" script.
+run: py./List-of-Columns-of-seainfo.py

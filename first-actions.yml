@@ -1,0 +1,2 @@
+name: Run the "List of Columns of SeaInfo" script.
+run: sh./List-of-Columns-of-seainfo.sh

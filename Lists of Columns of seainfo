@@ -6,6 +6,9 @@ print(df)
 
 #Importation of a Subset of Columns
 
-To import a subset of columns, insert the usecol[] argument.
-dataframe = pd.read_csv('seainfo.csv', usecol['location','temperature'])
-print(dataframe)
+#To import a subset of columns, insert the usecol[] argument.
+#dataframe = pd.read_csv('seainfo.csv', usecol['location','temperature'])
+#print(dataframe)
+
+name: Run the "List of Columns of SeaInfo" script.
+run: sh./github-actions-script.sh

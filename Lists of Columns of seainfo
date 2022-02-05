@@ -10,5 +10,4 @@ print(df)
 #dataframe = pd.read_csv('seainfo.csv', usecol['location','temperature'])
 #print(dataframe)
 
-name: Run the "List of Columns of SeaInfo" script.
-run: sh./github-actions-script.sh
+

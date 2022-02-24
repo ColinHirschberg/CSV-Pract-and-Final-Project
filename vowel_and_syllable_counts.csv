@@ -1,14 +1,12 @@
-
-
-"word", "vowels", "syllables"
-"meal", 1, ?
-"hire", 1, ?
-"hour", 1, ?
-"lawyer", 1, ?
-"mayor", 1, ?
-"crayon", 1, ?
-"table", 1, 2
-"camel", 1, 2
-"water", 1, 2
-"pithy", 2, 2
+"word","vowels","syllables"
+"meal","1","?"
+"hire","1","?"
+"hour","1","?"
+"lawyer","1","?"
+"mayor","1","?"
+"crayon","1","?"
+"table","1","2"
+"camel","1","2"
+"water","1","2"
+"pithy","2","2"
 

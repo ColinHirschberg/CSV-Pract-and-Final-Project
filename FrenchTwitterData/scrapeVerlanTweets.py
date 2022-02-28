@@ -50,7 +50,7 @@ for word in Pattaya_verlan_words:
    
 #Section 3: Construct a dataframe from the .json file. The dataframe should be organized into a column carrying number tags indicative
 #of metadata of the Tweets and a column carrying the content of the Tweets. We remain in the for loop.
-   Pattaya_dataframe = pandas.read_json("Tweets_attesting_to_Pattaya_verlan_words.json", )
+   Pattaya_dataframe = pandas.read_json("Tweets_attesting_to_Pattaya_verlan_words.json", lines = True)
              
 #Section 4: Apply the .head() method or .tail() method to display the first five entries of the dataframe or the final five entries of the dataframe, respectively.
   first_five_tweets_attesting_to_Pattaya_verlan_words = Pattaya_dataframe.head()

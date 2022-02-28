@@ -1,0 +1,1 @@
+This folder encapsulates the script program that was used to garner Verlan words typical of La Haine and Verlan words characteristic of Pattaya from Twitter. Later, it will also carry the csv files and lists of Tweets.

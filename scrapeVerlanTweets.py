@@ -62,7 +62,7 @@ for word in Pattaya_verlan_words:
   if len(La_Haine_dataframe) == 0:
     print("Tweet Count of ", search_string1, " : 0")
   else:
-    tweets_dataframe.to_csv('La-Haine-tweets.csv', sep=',', index=False, columns=['date', 'content', 'id', 'url'])
+    La_Haine_dataframe.to_csv('La-Haine-tweets.csv', sep=',', index=False, columns=['date', 'content', 'id', 'url'])
     print("Tweet Count of ", search_string1, " : ", str(len(search_string1)))
   #Tweets Attesting to Pattaya Words
   if len(Pattaya_dataframe) == 0:

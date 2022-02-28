@@ -1,8 +1,9 @@
 
 #Section 1: In order to implement or wield the scrapeVerlanTweets.py to garner Tweets from Twitter, install pandas and the snscrape packages in the Repl.it 
 #bash shell, not in the python interpreter. The shell defaults to bash mode until "python" is typed in a commandline.
-pip install pandas
-pip3 install git+https://github.com/JustAnotherArchivist/snscrape.git
+#pip install pandas
+#pip3 install git+https://github.com/JustAnotherArchivist/snscrape.git
+
 import os
 import pandas
 

@@ -4,7 +4,18 @@
 pip install pandas
 pip3 install git+https://github.com/JustAnotherArchivist/snscrape.git
 
-#Section 2: Iterate through a list of verlan words, and for each verlan word detected, append the tweet featuring the verlan word to a new list.'
+
+  
+#Section 2: Iterate through a list of verlan words typical of La Haine and a list of verlan words characteristic of Pattaya, 
+#and for each verlan word detected, append the tweet featuring the verlan word to the list allocated for storing Tweet-attested verlan words 
+#of that particular movie.
+
+Tweet_attested_                                                                                     _Verlan words = []
+La_Haine_Verlan_Words = []
+Tweets
+
+
+
 
 #Section 3: Construct a dataframe from the list of verlan words. The dataframe should be organized into a column carrying number tags indicative
 #of metadata of the Tweets and a column carrying the content of the Tweets.

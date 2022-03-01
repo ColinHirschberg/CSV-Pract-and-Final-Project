@@ -26,7 +26,7 @@ Tweets_attesting_to_Pattaya_verlan_words = []
 for word in La_Haine_verlan_words:
   #Search for tweets that feature the word that aligns with the current value of our looping variable.
   search_string1 = '/"'+word+'/"'
-  os.system("snscrape --jsonl --max-results {} --since {} twitter-search '{} until:{}'> Tweets_attesting_to_La_Haine_verlan_words.json".format(tweet_count,start_date, search_string1, end_date)
+  os.system("snscrape --jsonl --max-results {} --since {} twitter-search '{} until:{}'> Tweets_attesting_to_La_Haine_verlan_words.json".format(tweet_count,start_date, search_string1, end_date))
   #Construct a dataframe that organizes the metadata and contents of tweets that feature each Verlan word characteristic of La Haine.
   
             
@@ -45,7 +45,7 @@ for word in Pattaya_verlan_words:
   #search for tweets that feature the word
    search_string2 = '\"'+word+'\"'
   #Construct a dataframe that oranizes the metadata and contents of tweets that feature each Verlan word typical of Pattaya.
-   os.system("snscrape --jsonl --max-results {} --since {} twitter-search '{} until:{}'> Tweets_attesting_to_Pattaya_verlan_words.json".format(tweet_count,start_date,search_string2,end_date)
+   os.system("snscrape --jsonl --max-results {} --since {} twitter-search '{} until:{}'> Tweets_attesting_to_Pattaya_verlan_words.json".format(tweet_count,start_date,search_string2,end_date))
    
 #Section 3: Construct a dataframe from the .json file. The dataframe should be organized into a column carrying number tags indicative
 #of metadata of the Tweets and a column carrying the content of the Tweets. We remain in the for loop.

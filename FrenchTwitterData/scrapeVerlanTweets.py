@@ -96,3 +96,4 @@ if len(Pattaya_dataframe) == 0:
 else:
     Pattaya_dataframe.to_csv('Pattaya-tweets.csv', sep=',', index=False, columns=['date', 'content', 'id', 'url'])
     print("Tweet Count of ", search_string2, " : ", str(len(search_string2)))
+

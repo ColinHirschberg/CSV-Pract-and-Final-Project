@@ -29,7 +29,6 @@ for word in La_Haine_verlan_words:
   os.system("snscrape --jsonl --max-results {} --since {} twitter-search '{} until:{}'> Tweets_attesting_to_La_Haine_verlan_words.json".format(tweet_count,start_date, search_string1, end_date))
   #Construct a dataframe that organizes the metadata and contents of tweets that feature each Verlan word characteristic of La Haine.
   
-            
 #Section 3: Construct a dataframe from the .json file. The dataframe should be organized into a column carrying number tags indicative
 #of metadata of the Tweets and a column carrying the content of the Tweets. We remain in the for loop.
   La_Haine_dataframe = pandas.read_json("Tweets_attesting_to_La_Haine_verlan_words.json", lines = True)
@@ -39,7 +38,6 @@ for word in La_Haine_verlan_words:
   final_five_tweets_attesting_to_La_Haine_verlan_words = La_Haine_dataframe.tail()
   print(first_five_tweets_attesting_to_La_Haine_verlan_words)
   print(final_five_tweets_attesting_to_La_Haine_verlan_words)
-
 
 for word in Pattaya_verlan_words:
   #search for tweets that feature the word

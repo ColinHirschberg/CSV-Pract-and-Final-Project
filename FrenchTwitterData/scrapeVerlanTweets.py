@@ -10,8 +10,7 @@ import pandas
 #Query Twitter by text search
 #Set the variables that will facilitate the formatting of the search command.
 
-La_Haine_verlan_words = []
-Pattaya_verlan_words = []
+
 tweet_count = 1000
 #We can augment the max number of tweets garnered later.
 start_date = "2022-02-27"
@@ -21,7 +20,7 @@ end_date = "2022-02-28"
 #and for each verlan word detected, prepare to integrate the tweet featuring the verlan word into the list allocated for storing Tweets that manifest verlan words 
 #of particular movie.
 
-Tweets_attesting_to_La_Haine_verlan_words = []                                                                                    
+Tweets_attesting_to_La_Haine_verlan_words = []                                                                       
 Tweets_attesting_to_Pattaya_verlan_words = []
 
 for word in La_Haine_verlan_words:

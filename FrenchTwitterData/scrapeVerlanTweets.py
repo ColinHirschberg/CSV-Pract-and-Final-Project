@@ -68,9 +68,9 @@ for word in La_Haine_verlan_words:
   #Search for tweets that feature the word that aligns with the current value of our looping variable.
   search_string1 = '/"'+word+'/"'
   os.system("snscrape --jsonl --max-results {} --since {} twitter-search '{} until:{}'>Tweets_attesting_to_La_Haine_verlan_words.json".format(tweet_count,start_date, search_string1, end_date, lang))
-  #Construct a dataframe that organizes the metadata and contents of tweets that feature each Verlan word characteristic of La Haine.
+#Construct a dataframe that organizes the metadata and contents of tweets that feature each Verlan word characteristic of La Haine.
   
-Pattaya = ["ken", "kaïra", "kénn", "caille", "tej", "teub", "segros", "relou", "teubé" queurblo demer teshor
+Pattaya_verlan_words = ["ken", "kaïra", "kénn", "caille", "tej", "teub", "segros", "relou", "teubé" "queurblo", "demer", "teshor"]
    
 #Section 3: Construct a dataframe from the .json file. The dataframe should be organized into a column carrying number tags indicative
 #of metadata of the Tweets and a column carrying the content of the Tweets. We remain in the for loop.

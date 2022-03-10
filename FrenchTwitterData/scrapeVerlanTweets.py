@@ -26,21 +26,25 @@ end_date = "2022-02-28"
 
 #In specifying a file path, we do not need to ascend to the apex of the file tree because the script program that reads txt files  c-commands the txt files.
 
-file1 = open(r"La_Haine_verlan_words.txt","r",encoding = 'utf-8')
+#-------------------------------
 
-string_1 = file1.read()
+#file1 = open(r"La_Haine_verlan_words.txt","r",encoding = 'utf-8')
 
-La_Haine_verlan_words = string_1.split()
+#string_1 = file1.read()
 
-file1.close()
+#La_Haine_verlan_words = string_1.split()
 
-file2 = open(r"Pattaya_verlan_words.txt","r",encoding = 'utf-8')
+#file1.close()
 
-string_2 = file2.read()
+#file2 = open(r"Pattaya_verlan_words.txt","r",encoding = 'utf-8')
 
-Pattaya_verlan_words = string_2.split()
+#string_2 = file2.read()
 
-file2.close()
+#Pattaya_verlan_words = string_2.split()
+
+#file2.close()
+
+#-------------------------------
 
 #Section 2: Iterate through a list of verlan words typical of La Haine and a list of verlan words characteristic of Pattaya, 
 #and for each verlan word detected, prepare to integrate the tweet featuring the verlan word into the list allocated for storing Tweets that manifest verlan words 
@@ -49,13 +53,25 @@ file2.close()
 #Tweets_attesting_to_La_Haine_verlan_words = []                                                                       
 #Tweets_attesting_to_Pattaya_verlan_words = []
 
+
+tweet_count = 1000
+#We can adjust the max number of tweets garnered later.
+start_date = "2022-02-27"
+end_date = "2022-02-28"
+lang = French
+
+La_Haine_verlan_words = ["rebeu", "keufs", "keum", "kiffer", "oinj", "reuch", "reus", "zicmu", "blème", "galère", "ramer", "tune", "thune", "tchatcher", "pote", "frangin", "pétard", "flamber", "sapé", "branché", "fripes", "taf", "boulot", "bosser", "saoler", "bled", "bouquin", "taule", "flingue", "buter"]
+
+
+
 for word in La_Haine_verlan_words:
   #Search for tweets that feature the word that aligns with the current value of our looping variable.
   search_string1 = '/"'+word+'/"'
-  os.system("snscrape --jsonl --max-results {} --since {} twitter-search '{} until:{}'>Tweets_attesting_to_La_Haine_verlan_words.json".format(tweet_count,start_date, search_string1, end_date))    
+  os.system("snscrape --jsonl --max-results {} --since {} twitter-search '{} until:{}'>Tweets_attesting_to_La_Haine_verlan_words.json".format(tweet_count,start_date, search_string1, end_date, lang))
   #Construct a dataframe that organizes the metadata and contents of tweets that feature each Verlan word characteristic of La Haine.
   
-            
+Pattaya = ["ken", "kaïra", "kénn", "caille", "tej", "teub", "segros", "relou", "teubé" queurblo demer teshor
+   
 #Section 3: Construct a dataframe from the .json file. The dataframe should be organized into a column carrying number tags indicative
 #of metadata of the Tweets and a column carrying the content of the Tweets. We remain in the for loop.
   La_Haine_dataframe = pandas.read_json("Tweets_attesting_to_La_Haine_verlan_words.json", lines = True)

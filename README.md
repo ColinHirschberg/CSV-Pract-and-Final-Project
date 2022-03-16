@@ -1,2 +1,2 @@
-# CSV-Pract-and-Final-Project
-I created this repository to document my practice authoring CSV files, reading and writing CSV files in python with pandas, exporting CSV files to excel spreadsheet, or excel or Google spreadsheet. Later, I will amass all my final project files into a folder in this repository.
+# CSV-Pract-and-Final-Project-1
+I created this repository to document my practice authoring CSV files, reading and writing CSV files in python with pandas and the DictReader of the csv module as well as to Verlan usage data in corpora, both the data that incorporated in the final project and the the data that proved less pertinent. Only FrenchTwitterData and Results contain the content of the Verlan cinema words' frequency in Twitter tweets.
